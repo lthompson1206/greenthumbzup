@@ -33,6 +33,7 @@ const AvailableStrains = () => {
     const strainsList = DUMMY_STRAINS.map((strains) =>  (
     <ProductItem 
     key={strains.id} 
+    id={strains.id}
     name={strains.name} 
     description={strains.description} 
     price={strains.price}
