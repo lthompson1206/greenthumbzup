@@ -7,11 +7,27 @@
     background-color: #42986D;
     color: white;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: ; */
     align-items: center;
+    overflow: hidden;
     padding: 0% -5%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
+  }
+
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .headerRight {
+    float: right;
   }
   
   .main-image {
@@ -26,4 +42,16 @@
     height: 100%;
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .headerRight {
+      float: none;
+    }
   }
